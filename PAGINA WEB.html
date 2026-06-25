@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Atomic Inkspot</title>
+
+    <meta name="description"
+        content="The Atomic Inkspot - Branding, Diseño Gráfico, Ilustración e Impresión Profesional.">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            THE ATOMIC INKSPOT
+        </div>
+
+        <nav>
+
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+        <a href="#contacto" class="quote-btn">
+            Solicitar Cotización
+        </a>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>
+                Diseñamos Marcas que Dejan Huella
+            </h1>
+
+            <p>
+                Branding, ilustración, diseño gráfico e impresión profesional para emprendedores y empresas.
+            </p>
+
+            <a href="#servicios" class="hero-btn">
+                Explorar Servicios
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+
+    <section class="stats">
+
+        <div class="stat">
+            <h3>50+</h3>
+            <p>Proyectos Realizados</p>
+        </div>
+
+        <div class="stat">
+            <h3>20+</h3>
+            <p>Clientes Satisfechos</p>
+        </div>
+
+        <div class="stat">
+            <h3>100%</h3>
+            <p>Diseño Personalizado</p>
+        </div>
+
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+
+    <section class="about" id="nosotros">
+
+        <div class="about-image">
+
+            <img src="Negocio.jpeg" alt="Diseño">
+
+        </div>
+
+        <div class="about-text">
+
+            <h2>Sobre Nosotros</h2>
+
+            <p>
+                En The Atomic Inkspot ayudamos a emprendedores, negocios y organizaciones a construir una identidad
+                visual sólida mediante soluciones creativas de branding, ilustración, diseño gráfico e impresión.
+            </p>
+
+            <h3>Misión</h3>
+
+            <p>
+                Transformar ideas en experiencias visuales memorables que conecten auténticamente con las personas.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+
+    <section class="services" id="servicios">
+
+        <h2>Nuestros Servicios</h2>
+
+        <div class="services-grid">
+
+            <div class="card">
+                <h3>Branding</h3>
+                <p>Identidad visual completa para empresas y emprendedores.</p>
+            </div>
+
+            <div class="card">
+                <h3>Diseño Gráfico</h3>
+                <p>Material publicitario, editorial y promocional.</p>
+            </div>
+
+            <div class="card">
+                <h3>Ilustración</h3>
+                <p>Arte digital y piezas visuales personalizadas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Impresión</h3>
+                <p>Producción de material gráfico de alta calidad.</p>
+            </div>
+
+            <div class="card">
+                <h3>Consultoría Creativa</h3>
+                <p>Estrategias visuales para fortalecer tu marca.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PORTAFOLIO -->
+
+    <section class="gallery" id="portafolio">
+
+        <h2>Proyectos Destacados</h2>
+
+        <div class="gallery-grid">
+
+            <img src="Yo.png" alt="" onclick="openImage(this)">
+            <img src="Tere.jpeg" alt="" onclick="openImage(this)">
+            <img src="Juan.png" alt="" onclick="openImage(this)">
+            <img src="Americo.jpeg" alt="" onclick="openImage(this)">
+
+        </div>
+
+    </section>
+
+</script>
+
+    <!-- TESTIMONIOS -->
+
+    <section class="testimonials">
+
+        <h2>Testimonios</h2>
+
+        <div class="testimonial">
+
+            <p>
+                "The Atomic Inkspot logró transformar completamente la imagen de nuestro negocio."
+            </p>
+
+            <h4>Cliente Satisfecho</h4>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section class="contact" id="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <form id="contact-form">
+
+        <input
+            type="text"
+            name="user_name"
+            placeholder="Nombre"
+            required>
+
+        <input
+            type="email"
+            name="user_email"
+            placeholder="Correo Electrónico"
+            required>
+
+        <textarea
+            name="message"
+            placeholder="Cuéntanos sobre tu proyecto"
+            required></textarea>
+
+        <button type="submit">
+            Enviar Mensaje
+        </button>
+
+    </form>
+
+    <p id="status-message"></p>
+
+</section>
+
+    <!-- LIGHTBOX -->
+
+    <div id="lightbox">
+
+        <span class="close" onclick="closeImage()">&times;</span>
+
+        <img id="lightbox-img">
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+
+            <h3>The Atomic Inkspot</h3>
+
+            <p>San Luis Potosí, México</p>
+
+        </div>
+
+        <div>
+
+            <h3>Contacto</h3>
+
+            <p>481 153 5720</p>
+
+            <p>rr2660032@gmail.com</p>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        function openImage(img) {
+
+            document.getElementById("lightbox").style.display = "flex";
+
+            document.getElementById("lightbox-img").src = img.src;
+
+        }
+
+        function closeImage() {
+
+            document.getElementById("lightbox").style.display = "none";
+
+        }
+
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    emailjs.init("238Oeisy3GXDxEj8J");
+
+    const form = document.getElementById("contact-form");
+
+    const statusMessage = document.getElementById("status-message");
+
+    form.addEventListener("submit", function(event){
+
+        event.preventDefault();
+
+        statusMessage.innerHTML = "Enviando mensaje...";
+
+        emailjs.sendForm(
+            "service_aajj6wo",
+            "template_491zg3b",
+            form
+        )
+
+        .then(function(){
+
+            statusMessage.innerHTML =
+            "✅ Mensaje enviado correctamente.";
+
+            form.reset();
+
+        })
+
+        .catch(function(error){
+
+            statusMessage.innerHTML =
+            "❌ Error al enviar el mensaje.";
+
+            console.error("Error:", error);
+
+        });
+
+    });
+
+});
+
+</script>
+</body>
+
+</html>
